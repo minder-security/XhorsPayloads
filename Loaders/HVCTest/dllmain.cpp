@@ -21,14 +21,14 @@ HMODULE hDll = NULL;
 
 extern "C" void __stdcall DllUnregisterServer(HWND hwnd, HINSTANCE hinst, LPSTR lpszCmdLine, int nCmdShow) {
 
-    MessageBoxA(NULL, "|+| DllUnregisterServer started!", "Debug", MB_OK);
+    // MessageBoxA(NULL, "|+| DllUnregisterServer started!", "Debug", MB_OK);
 
     HRSRC hRes = FindResource(hDll, MAKEINTRESOURCE(IDR_RCDATA1), RT_RCDATA);
 
     if (hRes == NULL) {
         // char errDesc[128];
-        // wsprintfA(errDesc, "|!| FindResource failed with code: %d", GetLastError());
-        // MessageBoxA(NULL, errDesc, "Debug", MB_OK);
+        // // wsprintfA(errDesc, "|!| FindResource failed with code: %d", GetLastError());
+        // // MessageBoxA(NULL, errDesc, "Debug", MB_OK);
         return;
     }
 

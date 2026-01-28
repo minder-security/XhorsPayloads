@@ -152,6 +152,7 @@
     <ResourceCompile Include="Resource.rc" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\..\..\output.bin" />
     <None Include="..\..\myagentx.bin" />
     <None Include="..\..\mycodex.bin" />
   </ItemGroup>
